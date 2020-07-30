@@ -31,28 +31,28 @@ def results ():
             return render_template("resultsfor4DLH.html",time=datetime.now()) 
     # dry, porocity(low),type 4, density(high) HTML: DL4H.html
         elif hair_condition== "dry" and porocity == "medium" and hair_type.startswith("4") and density == "high":
-            return render_template (" DM4H.html",time=datetime.now())
+            return render_template ("resultsforDM4H.html",time=datetime.now())
     # dry, porocity(medium),type 4, density(high) HTML: DM4H.html
         elif hair_condition== "dry" and porocity == "high" and hair_type.startswith("4") and density == "high": 
-            return render_template (" DH4H.html")
+            return render_template (" resultsforDH4H.html")
     # dry, porocity(high),type 4, density(high) HTML: DH4H.html
         elif hair_condition== "dry" and porocity == "low" and hair_type.startswith("4") and density == "medium": 
-            return render_template ("DL4M.html")
+            return render_template ("resultsforDL4M.html")
     # dry, low(porocity),type 4, density(medium) HTML: DL4M.html
         elif hair_condition== "dry" and porocity == "medium" and hair_type.startswith("4") and density == "medium": 
-            return render_template ("DM4M.html")
+            return render_template ("resultsforDM4M.html")
     # dry, medium(porocity),type 4, density(medium) HTML: DM4M.html
         elif hair_condition== "dry" and porocity == "high" and hair_type.startswith("4") and density == "medium": 
-            return render_template ("DH4M.html") 
+            return render_template ("resultsforDH4M.html") 
     # dry, high(porocity),type 4, density(medium) HTML: DH4M.html
         elif hair_condition == "dry" and porocity == "low" and hair_type.startswith("4") and density == "low": 
-            return render_template (" DL4L.html")
+            return render_template (" resultsforDL4L.html")
     # dry, low(porocity),type 4, density(low) HTML: DL4L.html
         elif hair_condition== "dry" and porocity == "medium" and hair_type.startswith("4") and density == "low": 
-            return render_template ("DM4L.html")
+            return render_template ("resultsforDM4L.html")
     # dry, low(porocity),type 4, density(medium) HTML: DM4L.html
         elif hair_condition== "dry" and porocity == "high" and hair_type.startswith("4") and density == "low": 
-            return render_template ("DH4L.html")
+            return render_template ("resultsforDH4L.html")
     # dry, high(porocity),type 4, density(low) HTML: DH4L.html
 # //////////////////////////-type4 damaged-//////////////////////////////////////////////////////////////////////////////////////////////////
         if  hair_condition== "damaged" and porocity == "low" and hair_type.startswith("4") and density == "high":
